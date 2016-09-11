@@ -1,0 +1,9 @@
+<ul>
+    {{#each model as |post|}}
+        <li>
+        {{#post-chip title=post.title author=post.author date=post.date}}
+            {{post.content}}
+        {{/post-chip}}
+        </li>
+    {{/each}}
+</ul>
