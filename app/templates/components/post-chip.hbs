@@ -1,6 +1,11 @@
 <div class="post-chip">
-  <h1>{{title}}</h1>
-  <h2>{{author}}</h2>
-  <h3>{{date}}</h3>
-  <p>{{yield}}</p>
+  <div class="post-chip-header">
+    <div class="post-chip-date">{{post.date}}</div>
+    <div class="post-chip-title">{{post.title}}</div>
+    <div class="post-chip-author">{{post.author}}</div>
+  </div>
+  <div class="post-chip-content">
+    {{post.content}}
+  </div>
 </div>
+<hr />

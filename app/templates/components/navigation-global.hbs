@@ -1,0 +1,15 @@
+<div class="top-bar">
+  <div class="row">
+    <div class="top-bar-left">
+      <ul class="dropdown menu" data-dropdown-menu>
+        <li class="menu-text">Site Title</li>
+        {{#each model as |link|}}
+          {{navigation-link link}}
+        {{/each}}
+      </ul>
+    </div>
+    <div class="top-bar-right">
+      <!-- nothing -->
+    </div>
+  </div>
+</div>

@@ -2,6 +2,6 @@ import Ember from 'ember';
 
 export default Ember.Route.extend({
   model() {
-    return this.get('store').query('post', { page: 1 });
+    return this.get('store').query('blog-post', { page: 1 });
   }
 });

@@ -11,15 +11,19 @@
 
     <link rel="stylesheet" href="{{rootURL}}assets/vendor.css">
     <link rel="stylesheet" href="{{rootURL}}assets/ember-testing.css">
+    <script src="{{rootURL}}assets/vendor.js"></script>
+    <script src="{{rootURL}}assets/ember-testing.js"></script>
+
+    <script>
+     setTimeout(function() { $(document).foundation(); }, 0);
+    </script>
 
     {{content-for "head-footer"}}
   </head>
   <body>
     {{content-for "body"}}
 
-    <script src="{{rootURL}}assets/vendor.js"></script>
-    <script src="{{rootURL}}assets/ember-testing.js"></script>
-
     {{content-for "body-footer"}}
+
   </body>
 </html>
